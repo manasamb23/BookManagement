@@ -16,6 +16,7 @@ public class BookController {
 
     private final BookService bookService;
 
+    // Book Management REST APIs
     @PostMapping
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
         return new ResponseEntity<>(
